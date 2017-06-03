@@ -1,0 +1,263 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>{{title}}</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="./css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+	</head>
+	<body>
+		<header class="header">
+			<article class="header__insert">
+				<img class="logo" src="" alt="lototip">
+<!-- 				<nav >
+					<ul class="nav-menu">
+						<li class="nav-link menu__item nav-link menu__item_active">
+							<a href="index.html">ГЛАВНАЯ</a>
+						</li>
+						<li class="nav-link menu__item">
+							<a href="catalog-rent-of-safes.html">КАТАЛОГ ПРИЛОЖЕНИЙ</a>
+						</li>
+						<li class="nav-link menu__item">
+							<a href="#">О КОМПАНИИ</a>
+						</li>
+					</ul>
+				</nav> -->
+			</article>
+			<div class="user-panel">
+				<div class="user-panel-wrapper clearfix">
+					<button class="category-button" href="#">
+						Каталог товаров<!-- {{#each task}}{{name}}{{/each}} -->
+						<div class="menu-wrapper">
+							<ul class="menu">
+								{{#link 0}}
+									{{name}}
+								{{/link}}
+							</ul> 
+						</div>
+					</button>
+					<form class="search-form">
+						<input class="search-form__field" placeholder="Найти товар">
+						<input type="submit" class="search-form__submit" value="Найти">
+					</form>
+					<div class="user-basket" href="#">Корзина</div>
+					<div class="user-cabinet" href="#">Личный кабинет</div>
+				</div>
+			</div>
+		</header>
+		<section class="main-page">
+			<h1 class="h1 main-page_header">АКЦИИ</h1>
+<!-- 			<form class="form-search">
+			<input type="search" class="form-search__field-search" placeholder="Поиск приложения">
+			</form> -->
+			<button class="application-package_button-back"><</button>
+			<ul class="application-package">
+			</ul>
+			<ul class="application-package-row">
+				<li class="application-package-row__item"></li>
+				<li class="application-package-row__item"></li>
+				<li class="application-package-row__item"></li>
+				<li class="application-package-row__item"></li>
+				<li class="application-package-row__item"></li>
+				<li class="application-package-row__item"></li>
+				<li class="application-package-row__item"></li>
+			</ul>
+			<button class="application-package_button-next">></button>
+			<h1 class="h1 main-page_header">ПОПУЛЯРНЫЕ ТОВАРЫ</h1>
+			<ul class="new-products">
+				<li class="new-products__item">
+					<img class="new-products__image" src="./images/product.jpg">
+					<header class="new-products__link">Телефончик</header>
+					<div class="new-products__price">Цена: <span>10 999 р.</span></div>
+					<ul class="rating-product">
+						<li class="rating-product__item">
+						</li>
+						<li class="rating-product__item">
+						</li>
+						<li class="rating-product__item">
+						</li>
+						<li class="rating-product__item">
+						</li>
+						<li class="rating-product__item">
+						</li>						
+					</ul>
+					<input class="add-in-basket-button" type="button" value="В КОРЗИНУ">
+				</li>
+				<li class="new-products__item">
+					<img class="new-products__image" src="./images/product.jpg">
+					<header class="new-products__link">Телефончик</header>
+					<div class="new-products__price">Цена: <span>10 999 р.</span></div>
+					<ul class="rating-product">
+						<li class="rating-product__item">
+						</li>
+						<li class="rating-product__item">
+						</li>
+						<li class="rating-product__item">
+						</li>
+						<li class="rating-product__item">
+						</li>
+						<li class="rating-product__item">
+						</li>						
+					</ul>
+					<input class="add-in-basket-button" type="button" value="В КОРЗИНУ">
+				</li>
+				<li class="new-products__item">
+					<img class="new-products__image" src="./images/product.jpg">
+					<header class="new-products__link">Телефончик</header>
+					<div class="new-products__price">Цена: <span>10 999 р.</span></div>
+					<ul class="rating-product">
+						<li class="rating-product__item">
+						</li>
+						<li class="rating-product__item">
+						</li>
+						<li class="rating-product__item">
+						</li>
+						<li class="rating-product__item">
+						</li>
+						<li class="rating-product__item">
+						</li>						
+					</ul>
+					<input class="add-in-basket-button" type="button" value="В КОРЗИНУ">
+				</li>
+				<li class="new-products__item">
+					<img class="new-products__image" src="./images/product.jpg">
+					<header class="new-products__link">Телефончик</header>
+					<div class="new-products__price">Цена: <span>10 999 р.</span></div>
+					<ul class="rating-product">
+						<li class="rating-product__item">
+						</li>
+						<li class="rating-product__item">
+						</li>
+						<li class="rating-product__item">
+						</li>
+						<li class="rating-product__item">
+						</li>
+						<li class="rating-product__item">
+						</li>						
+					</ul>
+					<input class="add-in-basket-button" type="button" value="В КОРЗИНУ">
+				</li>
+				<li class="new-products__item">
+					<img class="new-products__image" src="./images/product.jpg">
+					<header class="new-products__link">Телефончик</header>
+					<div class="new-products__price">Цена: <span>10 999 р.</span></div>
+					<ul class="rating-product">
+						<li class="rating-product__item">
+						</li>
+						<li class="rating-product__item">
+						</li>
+						<li class="rating-product__item">
+						</li>
+						<li class="rating-product__item">
+						</li>
+						<li class="rating-product__item">
+						</li>						
+					</ul>
+					<input class="add-in-basket-button" type="button" value="В КОРЗИНУ">
+				</li>
+			</ul>
+			<h1 class="h1 main-page_header">НОВИНКИ НЕДЕЛИ</h1>
+			<ul class="new-products">
+				<li class="new-products__item">
+					<img class="new-products__image" src="./images/product.jpg">
+					<header class="new-products__link">Телефончик</header>
+					<div class="new-products__price">Цена: <span>10 999 р.</span></div>
+					<ul class="rating-product">
+						<li class="rating-product__item">
+						</li>
+						<li class="rating-product__item">
+						</li>
+						<li class="rating-product__item">
+						</li>
+						<li class="rating-product__item">
+						</li>
+						<li class="rating-product__item">
+						</li>						
+					</ul>
+					<input class="add-in-basket-button" type="button" value="В КОРЗИНУ">
+				</li>
+				<li class="new-products__item">
+					<img class="new-products__image" src="./images/product.jpg">
+					<header class="new-products__link">Телефончик</header>
+					<div class="new-products__price">Цена: <span>10 999 р.</span></div>
+					<ul class="rating-product">
+						<li class="rating-product__item">
+						</li>
+						<li class="rating-product__item">
+						</li>
+						<li class="rating-product__item">
+						</li>
+						<li class="rating-product__item">
+						</li>
+						<li class="rating-product__item">
+						</li>						
+					</ul>
+					<input class="add-in-basket-button" type="button" value="В КОРЗИНУ">
+				</li>
+				<li class="new-products__item">
+					<img class="new-products__image" src="./images/product.jpg">
+					<header class="new-products__link">Телефончик</header>
+					<div class="new-products__price">Цена: <span>10 999 р.</span></div>
+					<ul class="rating-product">
+						<li class="rating-product__item">
+						</li>
+						<li class="rating-product__item">
+						</li>
+						<li class="rating-product__item">
+						</li>
+						<li class="rating-product__item">
+						</li>
+						<li class="rating-product__item">
+						</li>						
+					</ul>
+					<input class="add-in-basket-button" type="button" value="В КОРЗИНУ">
+				</li>
+				<li class="new-products__item">
+					<img class="new-products__image" src="./images/product.jpg">
+					<header class="new-products__link">Телефончик</header>
+					<div class="new-products__price">Цена: <span>10 999 р.</span></div>
+					<ul class="rating-product">
+						<li class="rating-product__item">
+						</li>
+						<li class="rating-product__item">
+						</li>
+						<li class="rating-product__item">
+						</li>
+						<li class="rating-product__item">
+						</li>
+						<li class="rating-product__item">
+						</li>						
+					</ul>
+					<input class="add-in-basket-button" type="button" value="В КОРЗИНУ">
+				</li>
+				<li class="new-products__item">
+					<img class="new-products__image" src="./images/product.jpg">
+					<header class="new-products__link">Телефончик</header>
+					<div class="new-products__price">Цена: <span>10 999 р.</span></div>
+					<ul class="rating-product">
+						<li class="rating-product__item">
+						</li>
+						<li class="rating-product__item">
+						</li>
+						<li class="rating-product__item">
+						</li>
+						<li class="rating-product__item">
+						</li>
+						<li class="rating-product__item">
+						</li>						
+					</ul>
+					<input class="add-in-basket-button" type="button" value="В КОРЗИНУ">
+				</li>
+			</ul>
+		</section>
+		<footer class="footer">
+			<div class="footer-wrapper">
+				<div class="copyright">
+					© "Company", {{currentDate}}
+				</div>
+			</div>
+		</footer>
+		<script type="text/javascript" src="./js/vendor/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="./js/common.js"></script>
+	</body>
+</html>

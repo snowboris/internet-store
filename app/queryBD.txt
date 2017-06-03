@@ -1,0 +1,18 @@
+CREATE TABLE products (id INT NOT NULL PRIMARY KEY AUTO_INCREMENT, name varchar(50), description varchar(2000), price int, rating float, count int, image varchar(1000), parameters varchar(1000))
+
+insert into products value(1,'phone', 'дерьмоописание', 4999, 9.2, 7, 'hrefimage', 'parameters');
+
+ALTER TABLE products ADD id_category INT NOT NULL  FOREIGN KEY (id_category) REFERENCES ca(usr_id);
+
+ALTER TABLE products
+ADD FOREIGN KEY (id_category)
+REFERENCES category(id);
+
+
+ALTER TABLE category ADD image varchar(1000) NOT NULL;
+
+insert into category(id_parent, name) value(0, 'Встраиваемая техника');
+
+insert into products(name, description, price, rating, count, image)
+
+insert into products(name, description, price, count, image,id_category) value('Холодильник INDESIT SB 167', 'Если вы планируете покупать комплект для стрижки, приобретайте изделие бренда REMINGTON. Их триммеры отличаются высокой функциональностью, разнообразием насадок и удивительной надежностью. Модель PG 6030 не исключение. Она удобна благодаря корпусу, который хорошо ложится в руку и не выскальзывает. Семь различных установок длины – еще одно преимущество изделия. <br/>Машинка для стрижки PG 6030 приобретается чаще подобных моделей благодаря функции использования в душе. Это не только облегчает стрижку, но и упрощает уборку после. Также изделие снабжено индикатором заряда батареи.', 13990, 20, '/images/products/212_r2752.jpg', 69);

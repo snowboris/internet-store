@@ -1,0 +1,15 @@
+<h1>TODO manager</h1>
+
+<!-- три скобки, не экранировать HTML! -->
+{{{content}}}
+
+<h2>Добавить задачу</h2>
+
+{{#if error}}<h2>{{error}}</h2>{{/if}}
+
+<form method="POST">
+	Задача: <input type="text" name="task">
+	<input type="submit" value="Добавить">
+</form>
+
+&copy; Школа Программирования

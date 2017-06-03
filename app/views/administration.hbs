@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Администрирование</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" type="text/css" href="./css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+				<script type="text/javascript" src="./js/vendor/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="./js/vendor/bootstrap.min.js"></script>
+<!-- 		<script type="text/javascript" src="./js/vendor/angular.min.js"></script>
+		<script type="text/javascript" src="./js/app.js"></script>
+		<script type="text/javascript" src="./js/directive.js"></script> -->
+	</head>
+	<body ng-controller="StoreController as store">
+		<div class="administration">
+			<header class="administration__header">
+				<h1 class="administration__header">Администрирование</h1>
+			</header>
+			<section class="administration__section">
+				<h2 class="administration__h2">Меню сайта</h2>
+				<form class="admin-menu" >
+					<table>
+						<tr>
+							<td>
+								<span class="admin-menu__label-category" for="category">Категории: </span></td>
+							
+						<td>
+		
+						{{#category 0 'admin'}}
+							{{name}}
+						{{/category}}
+	
+						</td>
+						<td>
+						<span>Действие:</span>
+						<select class="admin-menu__action select-event-l1">
+							<option value="add">Добавить</option>
+							<option value="change">Изменить</option>
+							<option value="delete">Удалить</option>
+						</select>
+						</td>
+						<td>
+						<input class="admin-menu input-category-l1" placeholder="Название категории">
+						<input type="button" class="admin-menu__submit add-l1" value="Выполнить">
+						</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="admin-menu__label-category" for="category">Подкатегории: </span>
+							</td>
+							<td>
+			
+									{{#category 1 'admin'}}
+										{{name}}
+									{{/category}}
+							
+							</td>
+								<!-- 	//{{#menu-admin 0}}
+									//{{/menu-admin}} -->
+							<td>	<span>Действие:</span>
+								<select class="admin-menu__action select-event-l2" name="menu-action">
+									<option value="add">Добавить</option>
+									<option value="change">Изменить</option>
+									<option value="delete">Удалить</option>
+								</select>
+							</td>
+							<td>
+								<input class="admin-menu input-category-l2" placeholder="Название категории">
+								<input type="button" class="admin-menu__submit add-l2" value="Выполнить">
+							</td>
+							
+						</tr>
+						<tr>
+							<td>
+							<span class="admin-menu__label-category" for="category">Подкатегории: </span>
+							</td>
+							<td>
+			
+								{{#category 2 'admin'}}
+									{{name}}
+								{{/category}}
+			
+							</td>
+							<!-- 	//{{#menu-admin 0}}
+								//{{/menu-admin}} -->
+
+							<td><span>Действие:</span>
+							<select class="admin-menu__action select-event-l3" name="menu-action">
+								<option value="add">Добавить</option>
+								<option value="change">Изменить</option>
+								<option value="delete">Удалить</option>
+							</select>
+							</td>
+							<td>
+							<input class="admin-menu input-category-l3" placeholder="Название категории">
+							<input type="button" class="admin-menu__submit add-l3" value="Выполнить">
+							</td>
+						</tr>
+						</table>
+			<!-- 		<button class="admin-menu__button-send">
+						Выполнить
+					</button> -->
+				</form>
+					<!-- <input class="admin-menu__input-category" id='category' type="text" placeholder="Название категории"> -->
+
+					<!-- <label class="admin-menu__label-category" for="subcategory">Добавить подкатегорию</label>
+					<select class="select-category">
+						<option class="select-category__option">test</option>
+						<option class="select-category__option">test</option>
+					</select>
+					<input class="admin-menu__input-subcategory" id="subcategory" placeholder="Название подкатегории"> 
+
+					<label class="admin-menu__label-category" for="subcategory-2">Добавить подкатегорию-2</label>
+					<select class="select-category">
+						<option class="select-category__option">test</option>
+						<option class="select-category__option">test</option>
+					</select>
+					<select class="select-category">
+						<option class="select-category__option">test</option>
+						<option class="select-category__option">test</option>
+					</select>
+					<input class="admin-menu__input-category" id="subcategory-2" type="text" placeholder="Название подкатегории2"> -->
+				
+			</section>
+		</div>
+
+		<script type="text/javascript" src="./js/common.js"></script>
+	</body>
+</html>
